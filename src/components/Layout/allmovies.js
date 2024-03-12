@@ -3,12 +3,13 @@ import axios from 'axios'; // Assuming you've installed axios
 
 function MoviesList() {
     const [Movies, setMovies] = useState([]);
+    const [New, setNew] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
             const response = await axios.get('http://localhost:5000/allMovies'); // API endpoint defined in Express.js
-            setMovies(response.data);
+            setMovies(response.data.data.movies);
             }
             catch(err){
                 console.log("error in  fetching all movies")
@@ -18,14 +19,12 @@ function MoviesList() {
     },[]);
 
     console.log(Movies);
-    // var newmovies=[];
-    const newmovies = Movies.data.movies
-    console.log(newmovies);
+    
     return (
         <>
-            {newmovies.length > 0 ? ( // Check if movies array has elements
+            {Movies.length > 0 ? ( // Check if movies array has elements
                 <ul>
-                    {newmovies.map((movie) => (
+                    {Movies.map((movie) => (
                         <div className="movielist">
                         <li key={movie.id}>Name : {movie.name}</li>
                         <li key={movie.id}> Director : {movie.Director}</li>
@@ -35,7 +34,7 @@ function MoviesList() {
                     ))}
                 </ul>
             ) : (
-                <p>Loading movies...</p>  
+                <p>Please Check the console Loading movies...</p>  
             )}
         </>
     );
