@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {Link} from "react-router-dom"
+import Header from "../utils/Header/Header";
+import Footer from "../utils/Footer/Footer";
 
 function AddMovieForm() {
     const [name, setName] = useState('');
@@ -31,30 +33,35 @@ function AddMovieForm() {
     };
 
     return (
+
+      <> 
+      <Header /> 
         <form onSubmit={handleSubmit}>
-            <label>
-                Movie Name:
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+            <label className='item-tag'>
+                Movie Name :
+                <input type="text" value={name}  onChange={(e) => setName(e.target.value)} />
             </label>
-            <label>
-                Director:
+            <label className='item-tag'>
+                Director :
                 <input type="text" value={director} onChange={(e) => setDirector(e.target.value)} />
-            </label>
-            <label>
-                lang:
+            </label >
+            <label className='item-tag'>
+                lang :
                 <input type="text" value={lang} onChange={(e) => setlang(e.target.value)} />
             </label>
-            <label>
-                Released Year:
+            <label className='item-tag'>
+                Released Year :
                 <input type="number" value={year} onChange={(e) => setyear(e.target.value)} />
             </label>
-            <label>
-                Rating:
+            <label className='item-tag'>
+                Rating :
                 <input type="number" min="0" max="10" value={rating} onChange={(e) => setRating(e.target.value)} />
             </label>
-            <button type="submit">Add Movie</button>
+            <button type="submit" className='btn'>Add Movie</button>
             <Link to="/allMovies"> check the Updated List</Link>
         </form>
+        <Footer/>
+        </>
     );
 }
 
@@ -74,57 +81,3 @@ function AddMovieForm() {
 // }
 
 export default AddMovieForm;
-
-
-// import React from "react";
-// import Header from "../utils/Header/Header";
-// import Footer from "../utils/Footer/Footer";
-// import {Link} from "react-router-dom";
-// import "./Add.css"
-
-// function Add(){
-//     return (
-//         <>
-//         <Header />
-//         <div className="container">
-//         {/* <div className="movie"> */}
-//         <form action="/allMovies" method="get" className="movie">
-//         <div className="item">
-//           <label for="name" className="item-tag">Name :</label>
-//           <input type="text" className="item-input" id="name" name="name" placeholder="Enter your name" required />
-//         </div>
-
-//         <div className="item">
-//         <label for="Director" className="item-tag">Director :</label>
-//         <input type="text"  className="item-input" id="director" name="director" placeholder="Enter your director" required />
-//         </div>
-
-//         <div className="item">
-//         <label for="lang" className="item-tag">lang :</label>
-//         <input type="text" className="item-input"  id="lang" name="lang" placeholder="Enter your lanfg" required />
-//         </div>
-
-//         <div className="item">
-//         <label for="year" className="item-tag">released :</label>
-//         <input type="number" className="item-input"  id="year" name="year" placeholder="Enter your name" required />
-//         </div>
-
-//         <div className="item">
-//         <label for="rating" className="item-tag">lang :</label>
-//         <input type="number"  className="item-input" id="rating" name="rating" placeholder="Enter your name" required />
-//         </div>
-
-//         <div className="item">
-//         <button type="submit" className="btn">Submit</button>
-//         </div>
-//           </form>
-//           {/* </div> */}
-//           </div>
-//           <Link to="/allMovies">all movies</Link>
-
-//           <Footer />
-//         </>
-//     );
-// }
-
-// export default Add;

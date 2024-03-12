@@ -25,16 +25,13 @@ function Home() {
         </div>
 
         <div className="inner-body">
-          <Link to="/update" >update Movie</Link>
+          <Link to="/update" >Update Movie</Link>
         </div>
-        
 
         <div className="inner-body">
-          <form action="/deleteMovies" method="delete">
-                <button className="btn">delete movie</button>
-          </form>
+          <Link to="/delete" >Delete Movie</Link>
         </div>
-
+        
         <div className="inner-body custom">
 
             <h3>Search movies by : </h3>
