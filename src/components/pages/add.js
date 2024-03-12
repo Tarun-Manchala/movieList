@@ -36,6 +36,7 @@ function AddMovieForm() {
 
       <> 
       <Header /> 
+      <div className="body">
         <form onSubmit={handleSubmit}>
             <label className='item-tag'>
                 Movie Name :
@@ -58,26 +59,13 @@ function AddMovieForm() {
                 <input type="number" min="0" max="10" value={rating} onChange={(e) => setRating(e.target.value)} />
             </label>
             <button type="submit" className='btn'>Add Movie</button>
-            <Link to="/allMovies"> check the Updated List</Link>
+            <Link to="/allMovies" className='link'> check the Updated List</Link>
         </form>
+        </div>
         <Footer/>
         </>
     );
 }
 
-// function MoviesList() {
-//     const [movies, setMovies] = useState([]);
-
-//     useEffect(() => {
-//         // Fetch movie data (if required)
-//     }, []);
-
-//     return (
-//         <div>
-//             <AddMovieForm />  {/* Add the movie form here */}
-//             {/* Display movie list if applicable */}
-//         </div>
-//     );
-// }
 
 export default AddMovieForm;

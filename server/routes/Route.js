@@ -12,7 +12,7 @@ router.get("/allMovies",getcontroller.allMovies);
 // router.get("/by-year",getcontroller.year);
 // router.get("/by-lang",getcontroller.lang);
 
-// router.get("/search",getcontroller.search);
+router.get("/searchMovie",getcontroller.searchMovie);
 
 router.post("/addMovie",postcontroller.addMovie);
 

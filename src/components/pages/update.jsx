@@ -6,7 +6,7 @@ function updateMovie(){
     return (
         <>
         <Header />
-        <div className="movie">
+        <div className="body">
 
         <h1> Updating Details</h1>
 

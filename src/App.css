@@ -43,6 +43,6 @@
   font-size: 15px;
   font-style: italic;
 }
-Link{
-  margin: 10px;
+.link{
+  text-decoration: none;
 }

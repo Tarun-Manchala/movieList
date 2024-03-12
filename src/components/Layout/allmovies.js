@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Assuming you've installed axios
+import Header from "../utils/Header/Header";
+import Footer from "../utils/Footer/Footer";
 
 function MoviesList() {
     const [Movies, setMovies] = useState([]);
@@ -22,6 +24,8 @@ function MoviesList() {
     
     return (
         <>
+        <Header />
+        <div className="body">
             {Movies.length > 0 ? ( // Check if movies array has elements
                 <ul>
                     {Movies.map((movie) => (
@@ -36,6 +40,8 @@ function MoviesList() {
             ) : (
                 <p>Please Check the console Loading movies...</p>  
             )}
+            </div>
+            <Footer/>
         </>
     );
 }

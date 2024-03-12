@@ -10,34 +10,57 @@ function Home() {
     <>
       <Header />
       <div className="body">
-        
+       <div className="left">
+        <h1>CRUD Operations</h1>
         <div className="inner-body">
-          <Link to="/allMovies">All movies</Link>
+          <Link to="/allMovies" className="link">All movies</Link>
         </div>
 
         <div className="inner-body">
-                <Link to="/add" >Add Movie</Link>
+                <Link to="/add" className="link">Add Movie</Link>
           
         </div>
 
         <div className="inner-body">
-          <Link to="/search" >search Movie</Link>
+          <Link to="/search"className="link" >search Movie</Link>
         </div>
 
         <div className="inner-body">
-          <Link to="/update" >Update Movie</Link>
+          <Link to="/update" className="link">Update Movie</Link>
         </div>
 
         <div className="inner-body">
-          <Link to="/delete" >Delete Movie</Link>
+          <Link to="/delete" className="link">Delete Movie</Link>
+        </div>
+
         </div>
         
-        <div className="inner-body custom">
+        <div className="right">
 
-            <h3>Search movies by : </h3>
+            <h1>Search movies by : </h1>
 
             <div className="criteria">
-          <form action="/movies-by-name" method="get">
+
+              <div className="inner-body">
+          <Link to="/delete" className="link">Name</Link>
+              </div>
+
+              <div className="inner-body">
+          <Link to="/delete" className="link">Director</Link>
+              </div>
+
+              <div className="inner-body">
+          <Link to="/delete" className="link">Language</Link>
+              </div>
+
+              <div className="inner-body">
+          <Link to="/delete" className="link">Release year</Link>
+              </div>
+
+              <div className="inner-body">
+          <Link to="/delete" className="link">Rating</Link>
+              </div>
+          {/* <form action="/movies-by-name" method="get">
                 <button className="btn">Name</button>
           </form>
           <form action="/movies-by-director" method="get">
@@ -51,12 +74,12 @@ function Home() {
           </form>
           <form action="/movies-by-rating" method="get">
                 <button className="btn">Rating</button>
-          </form>
+          </form> */}
           </div>
 
         </div>
-
-      </div>
+    </div>
+      
       <Footer />
     </>
   );
