@@ -18,8 +18,8 @@ function MoviesList() {
     },[]);
 
     console.log(Movies);
-    var newmovies=[];
-    if (Movies.length > 0) {newmovies = Movies.data.movies;}
+    // var newmovies=[];
+    const newmovies = Movies.data.movies
     console.log(newmovies);
     return (
         <>
