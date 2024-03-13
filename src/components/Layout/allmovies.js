@@ -5,7 +5,7 @@ import Footer from "../utils/Footer/Footer";
 
 function MoviesList() {
     const [Movies, setMovies] = useState([]);
-    const [New, setNew] = useState([]);
+    // const [New, setNew] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
