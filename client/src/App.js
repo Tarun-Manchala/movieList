@@ -1,16 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Routing from "./components/Routes/Routes"
+import Routing from "./Routes/Routes"
 import React from "react";
-
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./utils/Footer/Footer"
+import Header from "./utils/Header/Header"
+import Navbar from "./components/navbar"
 
 function App() {
   return (
     <div className="App">
-      <Routing />
+      <Header />
+        <Routing/>
+      <Footer />
     </div>
   );
 }

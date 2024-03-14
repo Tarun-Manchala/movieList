@@ -1,48 +1,6 @@
 *{
-  text-align: center;
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  /* background-color: bisque; */
-}
-.movielist{
-  margin: 30px;
-}
-.movie{
-  display: flex;
-  align-items: center;
-  justify-content:center ;
-  flex-direction: column;
-  margin: 7px;
-}
-.item{
-  display: flex;
-  align-items: center;
-  justify-content:center ;
-  flex-direction: row;
-  /* background-color: rgb(233, 232, 165); */
-  margin:10px
 
-  /* margin: 7px; */
 }
-.item-tag{
-  /* margin-top:10px; */
-  margin-right: 10px;
-  height:35px;
-  border:1px;
-  border-radius: 5px;
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content:center ;
-}
-.item-input{
-  border:1px solid black;
-  border-radius: 5px;
-  /* background-color: rgb(233, 232, 165); */
-  height:35px;
-  font-size: 15px;
-  font-style: italic;
-}
-.link{
-  text-decoration: none;
-}
+

@@ -10,7 +10,7 @@ const base_url = "https://movie-list-one-omega.vercel.app/";
 
 const app = express();
 
-const PORT =  process.env.PORT || 5000;
+const PORT =  process.env.PORT || 4000;
 
 
 app.use(cors());

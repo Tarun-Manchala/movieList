@@ -1,0 +1,36 @@
+.item-container{
+    display: flex;
+    align-items: center;
+    height:calc(100vh - 140px);
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+  }
+
+.item-tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5px;
+    margin: 2px;
+   
+}
+input{
+    padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    margin-left: 10px;
+    width:200px;
+}
+input :hover{
+    border:2px solid black;
+}
+input :focus{
+    border-color: #007bff; 
+  outline: none;
+}
+.options{
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,32 @@
+.header{
+    background-color: rgb(235, 233, 152);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index: 5;
+}
+.home-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 3px;
+    background-color: antiquewhite;
+    width: 122px;
+    height: 57px;
+    font-size: 28px;
+    border-radius: 9px;
+    position: fixed;
+    left: 6%;
+    top: 13%;
+    text-decoration: none;
+}
+.home :hover{
+    background-color: rgb(243, 197, 136);
+    font-size: 30px;
+    color:black;
+}
