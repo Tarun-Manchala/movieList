@@ -8,9 +8,7 @@ function Header(){
         <div className="header">
             <h1> Movies List</h1>
         </div>
-        {/* <div className="home">
-          <Link to="/" className="home-link">Home</Link>
-        </div> */}
+          {/* <Link to="/" className="home-link">Home</Link> */}
     </>
     )
 }

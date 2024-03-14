@@ -38,7 +38,7 @@ function SearchMovie() {
     <>
 
 
-    <div className="conatiner">
+    <div className="container">
       <div className="left">
       <h1>Search Movies</h1>
       <form onSubmit={handleSearch}>
@@ -58,7 +58,7 @@ function SearchMovie() {
 
       {error && <p className="error">{error}</p>}
      </div>
-     
+
       <div className="right">
       <ul>
         {newmovies.length > 0 ? (
