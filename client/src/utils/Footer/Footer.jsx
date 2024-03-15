@@ -3,11 +3,10 @@ import "./Footer.css";
 
 function Footer(){
     return (
-    <>
         <div className="footer">
-           <h1>Made with Nothing</h1>
+           <h1>Made with Love</h1>
         </div>
-    </>
+ 
     )
 }
 

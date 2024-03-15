@@ -34,7 +34,9 @@ function MoviesList() {
                         </div>
                         </>
             ) : (
-                <p>Please Check the console Loading movies...</p>  
+                
+                <p>Please wait a minute. Loading movies...</p>  
+             
             )}
            </div>
         </>
